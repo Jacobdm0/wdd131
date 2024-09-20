@@ -1,5 +1,7 @@
 
-div{
+.container{
+    width: 600px;
+    height: 600px;
     display: block;
     max-width: 600px;
     border: 1px solid #757272;
@@ -37,4 +39,5 @@ img{
 }
 li{
     line-height: 1.5;
+    margin-bottom: 25px;
 }
