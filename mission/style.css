@@ -1,0 +1,43 @@
+
+.container{
+    width: 600px;
+    height: 600px;
+    display: block;
+    max-width: 600px;
+    border: 1px solid #757272;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding: 10%
+}
+
+h1{
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 3px;
+    line-height: 1.5;
+}
+h2{
+    color: #006EB6;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 2px;
+    border-bottom: #757272 solid 1px;
+    line-height: 1.5;
+    font-size: 12px;
+}
+
+
+img{
+    display: block;
+    width:175px;
+    height: 70px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+li{
+    line-height: 1.5;
+    margin-bottom: 25px;
+}
