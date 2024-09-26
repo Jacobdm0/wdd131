@@ -20,7 +20,7 @@
     color: #fff;
 }
 .dark select{
-    border-radius: 5px;
+    border-radius: 10px;
     background-color: #757272;
 }
 /*  */
@@ -37,7 +37,7 @@
     padding: 10%
 }
 select{
-    border-radius: 5px;
+    border-radius: 10px;
     background-color:beige;
 }
 
