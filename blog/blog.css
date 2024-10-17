@@ -1,0 +1,39 @@
+h1{
+    text-align: center;
+    font-family: Impact, serif;
+}
+nav{
+    border-top: 2px solid #AF1B3F;
+    padding-top: 1.5%;
+    padding-bottom: 1.5%;
+    border-bottom: 2px solid #AF1B3F;
+}
+.navs{
+    width: 30%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-left: 70%;
+}
+a{
+    color: #AF1B3F;
+    text-decoration: none;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 20px;
+}
+main{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+}
+.infos{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    border-right: 1px solid #AF1B3F;
+    
+}
+.posts{
+margin-left: 5px;
+margin-right: 5px;
+}
+#filters{
+    border: 1px solid #AF1B3F;
+}
