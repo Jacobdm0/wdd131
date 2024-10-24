@@ -23,5 +23,60 @@ const articles = [
 		ages: '12-16',
 		genre: 'Fantasy',
 		stars: '⭐⭐⭐⭐'
+	},
+	{
+		id: 3,
+		title: "Belgariad Book One: Pawn of Prophecy",
+		date: "Feb 12, 2022",
+		description:
+		"A fierce dispute among the Gods and the theft of a powerful Orb leaves the World divided into five kingdoms. Young Garion, with his 'Aunt Pol' and an elderly man calling himself Wolf --a father and daughter granted near-immortality by one of the Gods -- set out on a complex mission.",
+		imgSrc:
+		"https://images-na.ssl-images-amazon.com/images/I/41ZxXA+nInL.jpg",
+		imgAlt: "Book cover for Pawn of Prophecy",
+		ages: "12-16",
+		genre: "Fantasy",
+		stars: "⭐⭐⭐⭐⭐"
 	}
 ]
+
+// document.getElementById('date1').innerHTML = articles[0].date
+// document.getElementById('age1').innerHTML = articles[0].ages
+// document.getElementById('desc1').innerHTML = articles[0].description
+// document.getElementById('title1').innerHTML = articles[0].title
+// document.getElementById('img1').src = articles[0].imgSrc
+// document.getElementById('img1').alt = articles[0].imgAlt
+// document.getElementById('genre1').innerHTML = articles[0].genre
+// document.getElementById('rating1').innerHTML = articles[0].stars
+
+// document.getElementById('date2').innerHTML = articles[1].date
+// document.getElementById('age2').innerHTML = articles[1].ages
+// document.getElementById('desc2').innerHTML = articles[1].description
+// document.getElementById('title2').innerHTML = articles[1].title
+// document.getElementById('img2').src = articles[1].imgSrc
+// document.getElementById('img2').alt = articles[1].imgAlt
+
+getBookTemplate = (article) => {
+	return `
+		<div>
+			<h2>${article.title}</h2>
+			<img src="${article.imgSrc}" alt="${article.imgAlt}">
+			<p>${article.description}</p>
+		</div>
+	`
+}
+getRatingTemplate = (article) => {
+	return `
+	<div>
+	<h3>${article.date}</h3>
+    <p>${article.ages}</p>
+    <p>${article.genre}</p>
+	<p>${article.stars}</p>
+	<div>
+	`
+}
+
+for (let index = 0; index < articles.length; index++) {
+	document.getElementsByClassName('posts')[0].innerHTML += getBookTemplate(articles[index])
+	document.getElementsByClassName('infos')[0].innerHTML += getRatingTemplate(articles[index])
+	
+}
