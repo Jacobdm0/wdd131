@@ -93,7 +93,7 @@ function totalFees() {
 
 
 
-const formSubmit = document.getElementById('submitButton');
+formSubmit = document.getElementById('submitButton');
 if (formSubmit) {
     formSubmit.addEventListener('click', submitForm);
 } else {
