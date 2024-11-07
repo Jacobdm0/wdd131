@@ -1,4 +1,4 @@
-count=1;
+let count=1;
 function participantTemplate(count) {
     return `
     <section class="participant${count}">
@@ -50,38 +50,52 @@ addButton.insertAdjacentHTML('beforebegin', ``);
 // Add event listener for addButton
 addButton.addEventListener('click', function() {
     // Your event handler code here
-    count+=1;
+    count += 1;
     addButton.insertAdjacentHTML('beforebegin', `${participantTemplate(count)}`);
 });
 
 
 
-
+function successTemplate(info) {
+    
+    return `Thank you ${info[2]} for registering. You have registered ${info[0]} participant(s) and owe $${info[1]} in Fees`;
+}
 function submitForm(event){
     event.preventDefault();
-    totalFees();
+    const feeTotal=totalFees();
+    adultName=document.getElementById("adult_name").innerText;
+    formA=document.getElementById("coolform");
+    formA.style.display = "none";
+    const regInfo=[count,feeTotal,adultName];
+    successText=successTemplate(regInfo);
+    document.getElementById("summary").innerHTML=successText;
 }
 
 function totalFees() {
     // the selector below lets us grab any element that has an id that begins with "fee"
     let feeElements = document.querySelectorAll("[id^=fee]");
     console.log(feeElements);
+    let total=0;
     // querySelectorAll returns a NodeList. It's like an Array, but not exactly the same.
     // The line below is an easy way to convert something that is list-like to an actual Array so we can use all of the helpful Array methods...like reduce
     // The "..." is called the spread operator. It "spreads" apart the list, then the [] we wrapped it in inserts those list items into a new Array.
-    ElementsArray = [...feeElements];
-    console.log(ElementsArray[0].value);
+    const ElementsArray = [...feeElements];
+    // console.log(ElementsArray[0].value);
     // sum up all of the fees. Something like Array.reduce() could be very helpful here :) Or you could use a Array.forEach() as well.
     // Remember that the text that was entered into the input element will be found in the .value of the element.
-    
-    // once you have your total make sure to return it!
-    // return total
+    for (i = 0; i < ElementsArray.length; i++) {
+        total += ElementsArray[i];
+        // once you have your total make sure to return it!
+        total += parseFloat(ElementsArray[i].value) || 0;
+        }
+        return total;
     }
 
 
 
-formSubmit = document.getElementById('submitButton')[0];
-formSubmit.addEventListener('click', function() {
-    submitForm('submit');
-    
-});
+const formSubmit = document.getElementById('submitButton');
+if (formSubmit) {
+    formSubmit.addEventListener('click', submitForm);
+} else {
+    console.error('submitButton not found');
+}
