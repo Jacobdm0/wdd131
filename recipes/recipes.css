@@ -1,0 +1,93 @@
+@media (max-width: 600px) {
+    /* body{
+        background-color: black;
+    } */
+    main{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-gap: 10px;
+    }
+    .grid-1{
+        grid-column: 1/2;
+        grid-row: 2/3;
+        z-index: -1;
+    }
+    .grid-2{
+        grid-column: 3/4;
+        grid-row: 1/2;
+        z-index: 1;
+    }
+
+    .logo{
+        width: 150px;
+    }
+    }
+hr{margin-bottom: 100px;}
+.title {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.logo {
+    width: 10%;
+}
+
+h1 {
+    font-size: 500%;
+    font-family: "Reenie Beanie", 'Bradley Hand', cursive;
+}
+
+.search {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    border: 4px solid lightgrey;
+    border-radius: 5px;
+}
+input {
+    width: 100%;
+ 
+    height : 30px;
+    border-width: 3px;
+    border-style: none solid none none;
+}
+.search-icon{
+    height: 30px;
+}
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+h2{
+
+    color: aqua;
+    font-family: "Reenie Beanie", 'Bradley Hand', cursive;
+    font-size: 400%;
+}
+.grid-2{
+    grid-row: 1/2;
+    grid-column: 2/3;
+}
+.recipe-image{
+    grid-row: 1/2;
+    grid-column: 1/2;
+    max-width: 80%;
+}
+
+
+
+footer{
+    display: flex;
+    flex-direction: row;
+    align-content: flex-start;
+}
+.social{
+    /* width:%; */
+    max-width: 50px;
+}
+.attr{
+    font-size: x-small;
+    margin-right: 80%;
+    text-decoration: none;
+}
