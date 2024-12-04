@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css">
+    <script src="blog_script.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180"
+      href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32"
+      href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16"
+      href="images/favicon-16x16.png">
+    <link rel="manifest" href="images/site.webmanifest">
+    <title>Blog</title>
+  
+  </head>
+  <body>
+    <nav>
+      <a href="index.html" class="navLink">Home</a>
+      <!-- <a href="projects.html" class="navLink">Projects</a> -->
+      <a href="blog.html" class="navLink">Musings</a>
+      <!-- <a href="links.html"class="navLink">My links</a> -->
+    </nav>
+    <div class="dropdown">
+      <a href="#poem1" class="dropdown-content">3/12/2024</a>
+      <a href="#poem2" class="dropdown-content">7/1/2024</a>
+      <!-- <a href="#poem3" class="dropdown-content"></a>
+        <a href="#poem4" class="dropdown-content"></a>
+        <a href="#poem5" class="dropdown-content"></a> 
+        <a href="#poem6" class="dropdown-content"></a> -->
+    </div>
+
+    <main>
+    <button id="delete" style="display: none;">Light Mode</button>
+    <input type="text" id="indexBox"style="display: none;">
+      <button id="del2" style="display: none;">submit</button>
+    </main>
+
+    <section id="textBox">
+      <div id="poem1" class="blogColumn">
+        <h1>IF</h1> <!--blog/poem post name-->
+        <h3 class="postDate">March 12, 2024</h3> <!--date of the post-->
+        <p class="blogText"><!--body of the post-->
+          I should have you out of my head by now<br>
+          In some ways you are but my heat doesnt agree<br>
+          It keep bring you up and asks me if...<br>
+          If i had said it sooner, if i had never said it<br>
+          If i had walked you home, if i had never talked to you<br>
+          If "we" had never been a thing, would "I" be better now?<br>
+          If I had fought harder to keep "us", what could have been next.<br>
+          <br>
+          I tell myself its over<br>
+          You're gone, and I know I'm the blame<br>
+          But i cant help wondering, a painful little if<br>
+          if i called tonight, would you answer?<br>
+          If i texted you today, what would you say?<br>
+          If i try to start again, would there even be a chance?<br>
+          <br>
+          My head ive found is easy to please, keep it busy and you're never a
+          thought.<br>
+          My heart though is difficult, no matter what i try to do, you remain a
+          constant thought<br>
+          That painful eternal <br>
+          If
+        </p>
+      </div>
+      <div id="poem2" class="blogColumn">
+        <h1>Feel Like</h1>
+        <h3 class="postDate">July 1, 2024</h3>
+        <p class="blogText">
+          does it ever feel<br>
+          like<br>
+          everything you do is wrong, <br>
+          that no matter the place, the time, <br>
+          or how youve tried <br>
+          <br>
+          does it ever feel<br>
+          like<br>
+          your alone, despite the crowd<br>
+          like no one knows you,<br>
+          but your tell yourself you didnt want it <br>
+          anyway<br>
+          <br>
+          does it ever feel<br>
+          like<br>
+          a storm in your heart<br>
+          like<br>
+          you want to shout<br>
+          but<br>
+          lost the words somewhere on the way<br>
+          to here<br>
+          <br>
+        </p>
+      </div>
+      <div id="poem3" class="blogColumn">
+      </div>
+      <div id="poem4" class="blogColumn">
+      </div>
+      <div id="poem5" class="blogColumn">
+      </div>
+      <div id="poem6" class="blogColumn">
+      </div>
+      <div id="poem7" class="blogColumn">
+      </div>
+      <div id="poem8" class="blogColumn">
+      </div>
+      <div id="poem9" class="blogColumn">
+      </div>
+      <div id="poem10" class="blogColumn">
+      </div>
+      <div id="poem11" class="blogColumn">
+      </div>
+      <div id="poem12" class="blogColumn">
+      </div>
+      <div id="poem13" class="blogColumn">
+      </div>
+      <div id="poem14" class="blogColumn">
+      </div>
+      <div id="poem15" class="blogColumn">
+      </div>
+    </section>
+
+    <form id="addProjectForm" style="display: none;">
+      <label for="name">Post Title--</label>
+      <input type="text" id="name" name="name" required><br>
+      <label for="description">Post Text</label>
+      <textarea id="description" name="description" required></textarea><br>
+      <button type="submit">Add post</button>
+    </form>
+    <form id= "auth" style="display: none;">
+      <label for="email">secret</label>
+      <input type="password" id="email" name="email" required><br>
+      <button id="author"type="submit">Submit</button>
+    </form>
+    
+    <footer>
+      <button id="Edit" style="display: block;">Edit</button>
+      <a href="index.html" class="navLink">Home</a>
+      <a href="projects.html" class="navLink">Projects</a>
+      <a href="soul.html" class="navLink">Musings</a>
+      <a href="links.html" class="navLink">My links</a>
+      <script async
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9732090730669197"
+        crossorigin="anonymous">
+        </script>
+    </footer>
+  </body>
+</html>
