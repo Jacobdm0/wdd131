@@ -1,15 +1,17 @@
 const plane = document.getElementById("plane");
-let xPosition = -100;
+const chance = Math.random();
+let xPosition = -60;
 let yPosition = Math.floor(Math.random() * window.innerHeight);
-let increment = 2;
+let xIncrement = 2;
+let yIncrement = 3;
 function animate() {
    // console.log("animate call success");
-    xPosition += increment; // Increment position
-    let opperator=Math.random() < 0.5;
+    xPosition += xIncrement; // Increment position
+    let opperator=Math.random() < chance;
     if (opperator==true){ 
-        yPosition += Math.floor(increment * Math.random());
+        yPosition += Math.floor(yIncrement * Math.random());
     } else {
-        yPosition -= Math.floor(increment * Math.random());
+        yPosition -= Math.floor(yIncrement * Math.random());
     }
     plane.style.left = `${xPosition}px`;
 

@@ -1,4 +1,4 @@
-let i = 3;
+let i = 1;
 let authority = false;
 
 let index = document.getElementById("indexBox");
