@@ -4,7 +4,10 @@ let xPosition = -60;
 let yPosition = Math.floor(Math.random() * window.innerHeight);
 let xIncrement = 2;
 let yIncrement = 3;
+plane.src="images/plane.png" ;
+plane.alt="plane, image from Freepik";
 function animate() {
+  
    // console.log("animate call success");
     xPosition += xIncrement; // Increment position
     let opperator=Math.random() < chance;
@@ -28,8 +31,19 @@ function animate() {
   }
 
   function revealSecret(){
-    increment = 0;
+    xIncrement = 0;
+    yIncrement = 0;
+    document.getElementById("welcome").style.display = "none";
     document.getElementById("secret").style.display = "block";
+    plane.src="images/fireworks.png" ;
+    plane.alt="fireworks, image from aopsan on Freepik";
+    plane.style.left=window.innerWidth/2;
+    plane.style.top=window.innerHeight/2;
+    plane.style.width = '500px';
+    setTimeout(() => {
+      plane.style.display = 'none';
+    }, 750)
+    
 
   }
 
