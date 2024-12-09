@@ -34,7 +34,7 @@ function animate() {
     xIncrement = 0;
     yIncrement = 0;
     document.getElementById("welcome").style.display = "none";
-    document.getElementById("secret").style.display = "block";
+    document.ge tElementById("secret").style.display = "block";
     plane.src="images/fireworks.png" ;
     plane.alt="fireworks, image from aopsan on Freepik";
     plane.style.left=window.innerWidth/2;

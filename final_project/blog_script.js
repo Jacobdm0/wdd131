@@ -36,6 +36,7 @@ function deletion() {
     document.getElementById("del2").style.display = "none";
 }
 function addAuthBox() {
+    document.getElementById("formArea").style.display = "block";
     auth.style.display = "block";
     editButton.style.display = "none";
 
